@@ -40,11 +40,20 @@ class Video extends Block
 			/*--- GROUP ---*/
 			->addTab('Elementy', ['placement' => 'top'])
 			->addGroup('g_video', ['label' => ''])
-
-			->addText('title', ['label' => 'Tytuł'])
-			->addFile('video', [
-				'label' => 'Wideo',
-				'return_format' => 'url',
+			->addText('subtitle', ['label' => 'Tytuł'])
+			->addText('title', ['label' => 'Nagłówek'])
+			->addWysiwyg('txt', [
+				'label' => 'Treść',
+				'tabs' => 'all', // 'visual', 'text', 'all'
+				'toolbar' => 'full', // 'basic', 'full'
+				'media_upload' => true,
+			])
+			->addLink('button', [
+				'label' => 'Przycisk',
+				'return_format' => 'array',
+			])
+			->addOembed('video', [
+				'label' => 'Wideo (oEmbed)',
 			])
 
 			->endGroup()

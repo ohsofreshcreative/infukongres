@@ -18,15 +18,17 @@ $sectionClass .= ' ' . $background;
 	<div class="__wrapper c-main">
 		<div class="">
 			@if (!empty($g_numbers['header']))
-			<h3 class="">{{ strip_tags($g_numbers['header']) }}</h3>
+			<h2 class="text-white w-full md:w-2/3">{{ strip_tags($g_numbers['header']) }}</h2>
 			@endif
 
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
 				@foreach ($g_numbers['r_numbers'] as $item)
 				<div class="__card relative bg-primary border-p radius p-10">
+				@if (!empty($item['img']))
 					<img src="{{ $item['img']['url'] }}" alt="{{ $item['img']['alt'] ?? '' }}" />
-					<p class="font-bold text-h3 mt-6 !mb-0">{{ $item['title'] }}</p>
-					<p class="text-lg">{{ $item['txt'] }}</p>
+					@endif
+					<p class="secondary font-bold text-h2 !mb-0">{{ $item['title'] }}</p>
+					<p class="text-white text-lg">{{ $item['txt'] }}</p>
 				</div>
 				@endforeach
 			</div>
