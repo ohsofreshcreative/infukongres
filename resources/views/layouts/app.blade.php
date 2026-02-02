@@ -22,11 +22,11 @@
 <body @php(body_class())>
 	@php(wp_body_open())
 
-<div class="so__icons flex flex-col gap-1">
-	<a target="_blank" href="https://www.facebook.com/everethpublishing"><img src="/wp-content/uploads/2025/11/fb.svg"/></a>
-	<a target="_blank" href="https://www.instagram.com/everethpublishing/"><img src="/wp-content/uploads/2025/11/ig.svg"/></a>
-	<a target="_blank" href="https://www.linkedin.com/company/evereth/"><img src="/wp-content/uploads/2025/11/in.svg"/></a>
-</div>
+	<div class="so__icons flex flex-col gap-1">
+		<a target="_blank" href="https://www.facebook.com/everethpublishing"><img src="/wp-content/uploads/2025/11/fb.svg" /></a>
+		<a target="_blank" href="https://www.instagram.com/everethpublishing/"><img src="/wp-content/uploads/2025/11/ig.svg" /></a>
+		<a target="_blank" href="https://www.linkedin.com/company/evereth/"><img src="/wp-content/uploads/2025/11/in.svg" /></a>
+	</div>
 
 	<div id="app">
 
@@ -38,13 +38,13 @@
 
 		@elseif (function_exists('is_woocommerce') && (is_product() || is_cart() || is_checkout()))
 
-<main id="main" class="main -menu-mt c-main">
-    @yield('content')
-</main>
+		<main id="main" class="main -menu-mt c-main">
+			@yield('content')
+		</main>
 
 		@else
 
-		<main id="main" class="main -menu-mt">
+		<main id="main" class="main -menu-mt -menu-mt">
 			@yield('content')
 		</main>
 
