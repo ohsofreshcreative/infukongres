@@ -38,13 +38,13 @@
 
 		@elseif (function_exists('is_woocommerce') && (is_product() || is_cart() || is_checkout()))
 
-<main id="main" class="main -spt c-main">
+<main id="main" class="main -menu-mt c-main">
     @yield('content')
 </main>
 
 		@else
 
-		<main id="main" class="main -spt">
+		<main id="main" class="main -menu-mt">
 			@yield('content')
 		</main>
 
