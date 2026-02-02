@@ -8,7 +8,7 @@ $sectionClass .= $flip ? ' order-flip' : '';
 <section
 	data-gsap-anim="section"
 	@if(!empty($section_id)) id="{{ $section_id }}" @endif
-	class="start bg-secondary relative -menu-pt min-h-[85svh] {{ $sectionClass }} {{ $section_class }}">
+	class="b-start bg-secondary relative -menu-pt min-h-[85svh] {{ $sectionClass }} {{ $section_class }}">
 
 	@if (!empty($g_start['use_video']) && !empty($g_start['video']))
 	<video
@@ -76,7 +76,7 @@ $sectionClass .= $flip ? ' order-flip' : '';
 
 		</div>
 
-		<div data-gsap-element="form" class="__form">
+		<div data-gsap-element="form" class="__form bg-primary p-10">
 			<h3 class="text-white">{{ $g_start_2['title'] }}</h3>
 			<div class="contact-form-container mt-4">
 				{!! do_shortcode($g_start_2['shortcode']) !!}
