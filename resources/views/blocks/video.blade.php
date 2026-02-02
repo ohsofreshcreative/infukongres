@@ -9,7 +9,7 @@ $sectionId = $block->data['id'] ?? null;
 $customClass = $block->data['className'] ?? '';
 @endphp
 
-<section data-gsap-anim="section" @if($sectionId) id="{{ $sectionId }}" @endif class="b-video -smt {{ $block->classes }} {{ $customClass }} {{ $sectionClass }}">
+<section data-gsap-anim="section" @if(!empty($section_id)) id="{{ $section_id }}" @endif class="b-video -smt {{ $block->classes }} {{ $customClass }} {{ $sectionClass }}">
 
 	<div class="__wrapper c-main relative">
 		<div class="__col grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
