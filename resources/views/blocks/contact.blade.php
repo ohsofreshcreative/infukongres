@@ -4,7 +4,7 @@ $sectionClass = '';
 
 <!--- contact -->
 
-<section data-gsap-anim="section" class="b-contact relative -spt {{ $sectionClass }}">
+<section data-gsap-anim="section" class="b-contact relative -spt pb-[104px] {{ $sectionClass }}">
 
 	<div class="__wrapper c-main relative z-2">
 
@@ -20,7 +20,7 @@ $sectionClass = '';
 
 				</div>
 			</div>
-			<div data-gsap-element="form" class="__form">
+			<div data-gsap-element="form" class="__form bg-dark p-10 radius">
 				<h3 class="text-white">{{ $g_contact_2['title'] }}</h3>
 				<div class="contact-form-container mt-4">
 					{!! do_shortcode($g_contact_2['shortcode']) !!}
