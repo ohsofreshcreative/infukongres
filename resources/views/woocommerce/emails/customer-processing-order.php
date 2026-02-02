@@ -28,16 +28,16 @@ do_action( 'woocommerce_email_header', $email_heading ); ?>
 
 <p>Dzień dobry,</p>
 
-<p>bardzo dziękujemy za rejestrację na konferencję VI Forum Zakażeń, która odbędzie się w dniach 13-15 maja 2026 r. w Hotelu Windsor w Jachrance. <b>Twoje zgłoszenie zostało przyjęte.</b></p>
+<p>bardzo dziękujemy za rejestrację na II Kongres Polskiego Towarzystwa Pielęgniarstwa Infuzyjnego, który odbędzie się w dniach 7-9 października 2026 r. w Hotelu Copernicus w Toruniu. <b>Twoje zgłoszenie zostało przyjęte.</b></p>
 
-<p>Status Twojej rejestracji na konferencję VI FZ został zmieniony na:
+<p>Status Twojej rejestracji na II Kongres Polskiego Towarzystwa Pielęgniarstwa Infuzyjnego został zmieniony na:
 
 <span style="color:#36d100;">OPŁACONY</span></p>
 
 <b>Dziękujemy, że będziesz z nami podczas konferencji!</b><br>
 
 <p>Więcej informacji o konferencji znajdziesz tutaj:<br>
-forumzakazen.coml<br><br>
+inukongres.pl<br><br>
 Serdecznie pozdrawiamy<br>
 Organizatorzy konferencji</p>
 
