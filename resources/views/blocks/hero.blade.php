@@ -51,7 +51,7 @@ $sectionClass .= $flip ? ' order-flip' : '';
 					<div>
 						<img src="/wp-content/uploads/2025/11/place.svg" />
 					</div>
-					<div class=" text-center">
+					<div class="">
 						<a class="text-white !underline" target="_blank" href="{!! $g_hero['link'] !!}">{!! $g_hero['place'] !!}</a>
 					</div>
 				</div>
