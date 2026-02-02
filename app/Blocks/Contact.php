@@ -69,6 +69,12 @@ class Contact extends Block
 			/*--- USTAWIENIA BLOKU ---*/
 
 			->addTab('Ustawienia bloku', ['placement' => 'top'])
+			->addText('section_id', [
+				'label' => 'ID',
+			])
+			->addText('section_class', [
+				'label' => 'Dodatkowe klasy CSS',
+			])
 			->addTrueFalse('flip', [
 				'label' => 'Odwrotna kolejność',
 				'ui' => 1,
@@ -85,6 +91,8 @@ class Contact extends Block
 		return [
 			'g_contact_1' => get_field('g_contact_1'),
 			'g_contact_2' => get_field('g_contact_2'),
+			'section_id' => get_field('section_id'),
+			'section_class' => get_field('section_class'),
 			'tiles' => get_field('tiles'),
 			'flip' => get_field('flip'),
 			'lightbg' => get_field('lightbg'),
