@@ -76,6 +76,13 @@ $sectionClass .= $flip ? ' order-flip' : '';
 
 		</div>
 
+		<div data-gsap-element="form" class="__form">
+			<h3 class="text-white">{{ $g_start_2['title'] }}</h3>
+			<div class="contact-form-container mt-4">
+				{!! do_shortcode($g_start_2['shortcode']) !!}
+			</div>
+		</div>
+
 		@if (!empty($g_start['image']))
 		<div data-gsap-element="image" class="">
 			<img src="{{ $g_start['image']['url'] }}" alt="{{ $g_start['image']['alt'] ?? '' }}">
