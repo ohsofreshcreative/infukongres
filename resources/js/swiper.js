@@ -102,8 +102,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (swipers.length > 0) {
     swipers.forEach((container) => {
       new Swiper(container, {
-        slidesPerView: 1,
-        spaceBetween: 30,
+        slidesPerView: 2,
+        spaceBetween: 40,
         loop: true,
         pagination: {
           el: container.querySelector('.swiper-pagination'),
@@ -135,9 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
           prevEl: container.querySelector('.swiper-button-prev'),
         },
         breakpoints: {
-          0: { slidesPerView: 1.1, spaceBetween: 20 },
+          0: { slidesPerView: 1.2, spaceBetween: 20 },
           768: { slidesPerView: 2.2, spaceBetween: 30 },
-          1024: { slidesPerView: 3.2, spaceBetween: 32 },
+          1024: { slidesPerView: 2.2, spaceBetween: 32 },
         },
         on: {
           init: function () {
