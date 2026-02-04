@@ -553,6 +553,10 @@ h6,
 	background-color: var(--p-brand);
 }
 
+.bg-p-dark {
+	background-color: var(--p-700) !important;
+}
+
 .bg-p-light {
 	background-color: var(--bg-p-light);
 }
@@ -1686,6 +1690,13 @@ p {}
 
 	a {
 		color: #fff;
+	}
+}
+
+/*--- !EN ---*/
+.page-id-654 {
+	footer .__wrap {
+		display: none;
 	}
 }
 

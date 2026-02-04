@@ -4,7 +4,7 @@ $sectionClass = '';
 
 <!--- contact -->
 
-<section data-gsap-anim="section" @if(!empty($section_id)) id="{{ $section_id }}" @endif class="b-contact relative -spt pb-[104px] {{ $sectionClass }}">
+<section data-gsap-anim="section" @if(!empty($section_id)) id="{{ $section_id }}" @endif class="b-contact bg-p-dark relative -spt pb-[104px] {{ $sectionClass }}">
 
 	<div class="__wrapper c-main relative z-2">
 
