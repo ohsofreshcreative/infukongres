@@ -8,7 +8,7 @@ $customClass = $block->data['className'] ?? '';
 	<div class="{{ $block->classes }}">
 
 		<div class="__wrapper c-main block">
-			<h2 class="w-3/4 mb-10">{{ $g_slides['title']}}</h2>
+			<h2 class="secondary w-3/4 mb-10">{{ $g_slides['title']}}</h2>
 		</div>
 
 		<div class="swiper offer-swiper c-main !overflow-visible">
