@@ -3,7 +3,7 @@ use App\Walkers\DropdownWalker;
 use App\Walkers\MobileDropdownWalker;
 @endphp
 
-<header x-data="{ mobileOpen: false }" class="relative top-0 z-50 bg-white masthead fixed-top">
+<header x-data="{ mobileOpen: false }" class="relative top-0 z-50 bg-dark masthead fixed-top">
 
 	<!-- Desktop Header -->
 	<div class="items-center justify-between hidden h-full py-4 px-12 mx-auto md:flex">
@@ -45,7 +45,7 @@ use App\Walkers\MobileDropdownWalker;
 		</a>
 		<button
 			@click.stop="mobileOpen = !mobileOpen"
-			class="p-2 primary bg-white rounded-md"
+			class="p-2 primary bg-p-dark rounded-md"
 			aria-expanded="mobileOpen"
 			aria-controls="mobile-menu-panel">
 			<span class="sr-only">Otwórz menu główne</span>

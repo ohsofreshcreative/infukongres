@@ -108,3 +108,19 @@ add_filter('woocommerce_checkout_fields', function ($fields) {
 
     return $fields;
 });
+
+/*--- CHANGE STATUS TEXT ---*/
+
+add_filter('gettext', function ($translated_text, $text, $domain) {
+    if ($domain === 'woocommerce' && $text === 'On hold') {
+        $translated_text = 'Proforma';
+    }
+    return $translated_text;
+}, 20, 3);
+
+
+
+add_filter('woocommerce_checkout_fields', function ($fields) {
+    $fields['billing']['billing_email']['placeholder'] = 'na ten adres zostanie przesłane potwierdzenie rejestracji oraz faktura';
+    return $fields;
+});
