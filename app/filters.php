@@ -119,6 +119,7 @@ add_filter('gettext', function ($translated_text, $text, $domain) {
 }, 20, 3);
 
 
+/*--- CHANGE PLACEHOLDER FOR BILLING EMAIL ---*/
 
 add_filter('woocommerce_checkout_fields', function ($fields) {
     $fields['billing']['billing_email']['placeholder'] = 'na ten adres zostanie przesłane potwierdzenie rejestracji oraz faktura';

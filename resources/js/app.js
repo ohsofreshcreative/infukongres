@@ -238,6 +238,7 @@ jQuery(function($) {
 });
 
 
+/*--- CHANGE PLACEHOLDER FOR BILLING EMAIL ---*/
 
 document.addEventListener('DOMContentLoaded', function () {
   const billingEmailInput = document.getElementById('billing_email');
