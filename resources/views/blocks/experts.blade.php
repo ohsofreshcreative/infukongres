@@ -12,7 +12,7 @@ $sectionClass .= $brandbg ? ' section-brand' : '';
 
 <section data-gsap-anim="section" @if(!empty($section_id)) id="{{ $section_id }}" @endif class="b-experts -smt {{ $sectionClass }} {{ $section_class }}">
 
-	<div class="flex">
+	<div class="flex flex-col md:flex-row">
 		@if (!empty($gallery))
 		<div class="swiper usage-swiper !overflow-hidden w-1/2">
 
