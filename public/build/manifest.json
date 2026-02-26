@@ -4,7 +4,7 @@
     "src": "editor.deps.json"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DEBWkx39.css",
+    "file": "assets/app-Cl6rxt5o.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -13,7 +13,7 @@
     ]
   },
   "resources/css/editor.css": {
-    "file": "assets/editor-MMTa9ZWm.css",
+    "file": "assets/editor-__F_Yp0e.css",
     "src": "resources/css/editor.css",
     "isEntry": true,
     "name": "editor",
