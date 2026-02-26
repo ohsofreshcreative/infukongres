@@ -34,7 +34,7 @@ $sectionClass .= $brandbg ? ' section-brand' : '';
 				<div data-gsap-element="txt" class="text-white mt-2">
 					{!! $g_about['txt'] !!}
 				</div>
-				<div class="flex gap-8 mt-10">
+				<div class="flex flex-col md:flex-row gap-8 mt-10">
 					<div data-gsap-element="item" class="text-white">
 						<b class="secondary">Gdzie?</b>
 						<p>{!! $g_about['where'] !!}</p>

@@ -45,7 +45,7 @@ use App\Walkers\MobileDropdownWalker;
 		</a>
 		<button
 			@click.stop="mobileOpen = !mobileOpen"
-			class="p-2 primary bg-p-dark rounded-md"
+			class="p-2 primary bg-white rounded-md"
 			aria-expanded="mobileOpen"
 			aria-controls="mobile-menu-panel">
 			<span class="sr-only">Otwórz menu główne</span>

@@ -25,7 +25,7 @@ $sectionClass .= ' ' . $background;
 				<h2 data-gsap-element="header" class="text-white m-header">{{ $g_workshops['title'] }}</h2>
 			</div>
 
-			<div class="__content flex mt-8">
+			<div class="__content flex flex-col md:flex-row gap-6 mt-8">
 				<div data-gsap-element="txt" class="__txt text-white w-full md:w-1/3 b-border-l pl-6">
 					{!! $g_workshops['text1'] !!}
 				</div>
@@ -34,7 +34,7 @@ $sectionClass .= ' ' . $background;
 				</div>
 
 				@if (!empty($g_workshops['button']))
-				<a data-gsap-element="btn" class="second-btn ml-auto" href="{{ $g_workshops['button']['url'] }}" target="{{ $g_workshops['button']['target'] }}">{{ $g_workshops['button']['title'] }}</a>
+				<a data-gsap-element="btn" class="second-btn ml-0 md:ml-auto" href="{{ $g_workshops['button']['url'] }}" target="{{ $g_workshops['button']['target'] }}">{{ $g_workshops['button']['title'] }}</a>
 				@endif
 			</div>
 

@@ -17,9 +17,9 @@ $block_title = get_field('block-title');
 
 <section id="{{ $section_id }}" class="counter relative -mt-20 z-10 {{ $nomt ? 'mt-0' : '' }} {{ $section_class }}">
 	<div class="c-main">
-		 <div class="bg-secondary px-20 py-10">
+		 <div class="bg-secondary px-6 md:px-20 py-10">
             @if ($g_counter && $g_counter['date'])
-            <div class="__counter flex justify-evenly" data-date="{{ $g_counter['date'] }}">
+            <div class="__counter flex justify-between md:justify-evenly gap-6" data-date="{{ $g_counter['date'] }}">
                 <div class="__item text-center">
                     <span class="text-h1 primary" id="days">00</span>
                     <div class="">Dni</div>

@@ -27,7 +27,7 @@ $description = $product->get_description();
 	</div>
 
 	<div class="flex flex-col justify-between b-border-l pl-10">
-		<div class="flex gap-6">
+		<div class="flex flex-col md:flex-row gap-6">
 			@if (!empty($product_about['date']))
 			<div class="text-white flex items-center gap-2"><img src="/wp-content/uploads/2025/11/callendar.svg"/> {{ $product_about['date'] }}</div>
 			@endif
