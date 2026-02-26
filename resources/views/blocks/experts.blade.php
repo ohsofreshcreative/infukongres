@@ -26,7 +26,7 @@ $sectionClass .= $brandbg ? ' section-brand' : '';
 		</div>
 		@endif
 
-		<div class="__content order2 w-1/2">
+		<div class="__content order2 w-full md:w-1/2">
 			<div class="w-3/4 m-auto">
 				<p data-gsap-element="subtitle" class="__subtitle subtitle-s">{{ $g_experts['subtitle'] }}</p>
 				<h2 data-gsap-element="header" class="text-white">{{ $g_experts['header'] }}</h2>
