@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (swipers.length > 0) {
     swipers.forEach((container) => {
       new Swiper(container, {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true, // Pętla nieskończona
         allowTouchMove: false, // Blokada ręcznego przewijania (myszką/palcem)
