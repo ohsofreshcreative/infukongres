@@ -14,7 +14,7 @@ $sectionClass .= $brandbg ? ' section-brand' : '';
 
 	<div class="flex flex-col md:flex-row">
 		@if (!empty($gallery))
-		<div class="swiper usage-swiper !overflow-hidden w-1/2">
+		<div class="swiper usage-swiper overflow-visible md:!overflow-hidden w-1/2">
 
 			<div class="swiper-wrapper">
 				@foreach($gallery as $image)
