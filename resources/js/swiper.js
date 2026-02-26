@@ -74,14 +74,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (swipers.length > 0) {
     swipers.forEach((container) => {
       new Swiper(container, {
-        slidesPerView: 1,
-        spaceBetween: 30,
         loop: true, // Pętla nieskończona
         allowTouchMove: false, // Blokada ręcznego przewijania (myszką/palcem)
         speed: 1000, // Opcjonalnie: czas trwania animacji przejścia (1s) dla płynności
         autoplay: {
           delay: 1000, // Czas w ms (3 sekundy) między przewinięciami
           disableOnInteraction: false, // Autoplay nie zatrzyma się po kliknięciu strzałek
+        },
+        breakpoints: {
+          0: { slidesPerView: 1.2, spaceBetween: 20 },
+          768: { slidesPerView: 2.2, spaceBetween: 30 },
+          1024: { slidesPerView: 3.2, spaceBetween: 32 },
         },
         pagination: {
           el: container.querySelector('.swiper-pagination'),
