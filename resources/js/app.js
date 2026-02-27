@@ -247,3 +247,17 @@ document.addEventListener('DOMContentLoaded', function () {
       'na ten adres zostanie przesłane potwierdzenie rejestracji oraz faktura';
   }
 });
+
+
+/*--- SCROLL ---*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.location.hash) {
+    const el = document.querySelector(window.location.hash);
+    if (el) {
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    }
+  }
+});
