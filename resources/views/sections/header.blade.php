@@ -7,7 +7,7 @@ use App\Walkers\MobileDropdownWalker;
 
 	<!-- Desktop Header -->
 	<div class="items-center justify-between hidden h-full py-4 px-12 mx-auto md:flex">
-		<a class="brand shrink-0" href="{{ home_url('/') }}">
+		<a class="brand shrink-0" href="{{ function_exists('pll_home_url') ? pll_home_url() : home_url('/') }}">
 			@if ($logo)
 			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto h-12">
 			@else
@@ -36,7 +36,7 @@ use App\Walkers\MobileDropdownWalker;
 
 	<!-- Mobile Header Bar -->
 	<div class="flex items-center justify-between p-4 mobile-menu fixed-top md:hidden">
-		<a class="brand shrink-0" href="{{ home_url('/') }}">
+		<a class="brand shrink-0" href="{{ function_exists('pll_home_url') ? pll_home_url() : home_url('/') }}">
 			@if ($logo)
 			<img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto h-12">
 			@else
@@ -74,7 +74,7 @@ use App\Walkers\MobileDropdownWalker;
 		aria-label="Menu mobilne">
 		<div class="p-4 relative z-10">
 			<div class="flex items-center justify-between mb-6">
-				<span class=""><a class="brand shrink-0" href="{{ home_url('/') }}"><img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto h-12"></a></span>
+				<span class=""><a class="brand shrink-0" href="{{ function_exists('pll_home_url') ? pll_home_url() : home_url('/') }}"><img src="{{ $logo['url'] }}" alt="{{ $logo['alt'] ?? 'Logo' }}" class="w-auto h-12"></a></span>
 				<button
 					@click="mobileOpen = false"
 					class="p-2 text-white rounded-md">
