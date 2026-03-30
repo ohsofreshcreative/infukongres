@@ -88,7 +88,7 @@ if (!empty($background) && $background !== 'none') {
 
         @if (!empty($agenda_data['btn1']['url']))
             <div data-gsap-element="btn" class="flex justify-center mt-12">
-                <div class="main-btn">
+                <div class="second-btn">
                     <a href="{{ $agenda_data['btn1']['url'] }}" target="{{ $agenda_data['btn1']['target'] ?? '_self' }}">{{ $agenda_data['btn1']['title'] }}</a>
                 </div>
             </div>
