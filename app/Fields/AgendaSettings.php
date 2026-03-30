@@ -31,15 +31,16 @@ class AgendaSettings extends Field
                     ->addRepeater('panels', [
                         'label' => 'Panele w danym dniu',
                         'button_label' => 'Dodaj panel',
-                        'layout' => 'block', // Zmieniono z 'table' na 'block' dla lepszej czytelności
+                        'layout' => 'table', // Zmieniono z 'table' na 'block' dla lepszej czytelności
                     ])
-                        ->addWysiwyg('paneltime', ['label' => 'Godzina', 'toolbar' => 'basic', 'media_upload' => 0])
-                        ->addWysiwyg('paneltitle', ['label' => 'Tytuł panelu', 'toolbar' => 'basic', 'media_upload' => 0])
-                        ->addWysiwyg('panelauthor', ['label' => 'Autorzy', 'toolbar' => 'basic', 'media_upload' => 0])
+                        ->addWysiwyg('paneltime', ['label' => 'Godzina', 'toolbar' => 'basic', 'media_upload' => 0, 'wrapper' => ['width' => '15']])
+                        ->addWysiwyg('paneltitle', ['label' => 'Tytuł panelu', 'toolbar' => 'basic', 'media_upload' => 0, 'wrapper' => ['width' => '15']])
+                        ->addWysiwyg('panelauthor', ['label' => 'Autorzy', 'toolbar' => 'basic', 'media_upload' => 0, 'wrapper' => ['width' => '15']])
                         ->addRepeater('extra_rows', [
                             'label' => 'Dodatkowe wiersze (np. przerwa kawowa)',
                             'button_label' => 'Dodaj wiersz',
-                            'layout' => 'block',
+                            'layout' => 'table',
+							'wrapper' => ['width' => '50']
                         ])
                             ->addWysiwyg('txt1', ['label' => 'Kolumna 1', 'toolbar' => 'basic', 'media_upload' => 0])
                             ->addWysiwyg('txt2', ['label' => 'Kolumna 2', 'toolbar' => 'basic', 'media_upload' => 0])
