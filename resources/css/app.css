@@ -40,6 +40,8 @@
 @import '../css/blocks/start.scss';
 @import '../css/blocks/video.scss';
 @import '../css/blocks/slides.scss';
+@import '../css/blocks/agenda.scss';
+@import '../css/blocks/program.scss';
 
 
 /*-- NOT USED --*/
