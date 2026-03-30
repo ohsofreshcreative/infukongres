@@ -7,7 +7,7 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
 
 class Agenda extends Block
 {
-    public $name = 'Agenda';
+    public $name = 'Agenda2';
     public $description = 'Blok wyświetlający agendę z panelami w zakładkach.';
     public $slug = 'agenda';
 	public $category = 'formatting';
