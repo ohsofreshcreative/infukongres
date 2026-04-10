@@ -87,6 +87,22 @@ class Hero extends Block
 				'return_format' => 'array',
 			])
 
+            ->addRepeater('certs', [
+                'label' => 'Certyfikaty',
+                'button_label' => 'Dodaj certyfikat',
+                'layout' => 'table',
+            ])
+                ->addImage('cert_image', [
+                    'label' => 'Obrazek certyfikatu',
+                    'return_format' => 'array',
+                    'preview_size' => 'thumbnail',
+                ])
+                ->addFile('cert_pdf', [
+                    'label' => 'Plik PDF certyfikatu',
+                    'return_format' => 'array',
+                    'mime_types' => 'pdf',
+                ])
+            ->endRepeater()
 			->endGroup()
 
 			->addTab('Ustawienia bloku', ['placement' => 'top'])

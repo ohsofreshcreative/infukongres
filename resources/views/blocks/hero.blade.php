@@ -76,6 +76,18 @@ $sectionClass .= $flip ? ' order-flip' : '';
 
 		</div>
 
+        <div class="self-end justify-self-end flex items-center gap-4">
+            @if(!empty($g_hero['certs']))
+                @foreach($g_hero['certs'] as $cert)
+                    @if(!empty($cert['cert_pdf']['url']) && !empty($cert['cert_image']['url']))
+                        <a href="{{ $cert['cert_pdf']['url'] }}" target="_blank">
+                            <img class="max-h-26 rounded-full transition-all hover:opacity-70" src="{{ $cert['cert_image']['url'] }}" alt="{{ $cert['cert_image']['alt'] ?? '' }}"/>
+                        </a>
+                    @endif
+                @endforeach
+            @endif
+        </div>
+
 		@if (!empty($g_hero['image']))
 		<div data-gsap-element="image" class="">
 			<img src="{{ $g_hero['image']['url'] }}" alt="{{ $g_hero['image']['alt'] ?? '' }}">
