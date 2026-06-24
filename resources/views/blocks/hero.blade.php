@@ -8,7 +8,7 @@ $sectionClass .= $flip ? ' order-flip' : '';
 <section
 	data-gsap-anim="section"
 	@if(!empty($section_id)) id="{{ $section_id }}" @endif
-	class="hero bg-secondary relative -menu-pt min-h-[85svh] {{ $sectionClass }} {{ $section_class }}">
+	class="hero bg-secondary relative flex flex-col justify-center min-h-[75svh] {{ $sectionClass }} {{ $section_class }}">
 
 	@if (!empty($g_hero['use_video']) && !empty($g_hero['video']))
 	<video
