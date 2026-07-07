@@ -29,7 +29,20 @@ $sectionClass .= ' ' . $background;
 				</div>
 
 				@if (!empty($g_duo['button']))
-				<a data-gsap-element="btn" class="second-btn m-btn" href="{{ $g_duo['button']['url'] }}" target="{{ $g_duo['button']['target'] }}">{{ $g_duo['button']['title'] }}</a>
+				<div class="inline-buttons m-btn">
+					<a data-gsap-element="button" class="second-btn left-btn"
+						href="{{ $g_duo['button']['url'] }}"
+						target="{{ $g_duo['button']['target'] }}">
+						{{ $g_duo['button']['title'] }}
+					</a>
+					@if (!empty($g_duo['button2']))
+					<a data-gsap-element="button" class="white-btn"
+						href="{{ $g_duo['button2']['url'] }}"
+						target="{{ $g_duo['button2']['target'] }}">
+						{{ $g_duo['button2']['title'] }}
+					</a>
+					@endif
+				</div>
 				@endif
 
 			</div>
