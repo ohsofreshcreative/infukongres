@@ -7,12 +7,12 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
 
 class Banner extends Block
 {
-	public $name = 'baner';
+	public $name = 'Banner';
 	public $description = 'banner';
 	public $slug = 'banner';
 	public $category = 'formatting';
-	public $icon = 'format-banner';
-	public $keywords = ['baner', 'zdjecie'];
+	public $icon = 'format-image';
+	public $keywords = ['banner', 'zdjecie'];
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
