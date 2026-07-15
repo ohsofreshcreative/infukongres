@@ -36,11 +36,11 @@ $sectionClass .= $brandbg ? ' section-brand' : '';
 				@if (!empty($logo['img']))
 				@if (!empty($logo['link']))
 				<a href="{{ $logo['link'] }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-white h-[120px]">
-					<img src="{{ $logo['img']['url'] }}" alt="{{ $logo['img']['alt'] ?? 'Logo partnera' }}" class="max-h-16 w-auto">
+					<img src="{{ $logo['img']['url'] }}" alt="{{ $logo['img']['alt'] ?? 'Logo partnera' }}" class="max-h-20 w-auto">
 				</a>
 				@else
 				<div class="flex items-center justify-center bg-white h-[120px]">
-					<img src="{{ $logo['img']['url'] }}" alt="{{ $logo['img']['alt'] ?? 'Logo partnera' }}" class="max-h-16 w-auto">
+					<img src="{{ $logo['img']['url'] }}" alt="{{ $logo['img']['alt'] ?? 'Logo partnera' }}" class="max-h-20 w-auto">
 				</div>
 				@endif
 				@endif
