@@ -35,7 +35,7 @@ class AgendaSettings extends Field
                     ])
                         ->addWysiwyg('paneltime', ['label' => 'Godzina', 'toolbar' => 'basic', 'media_upload' => 0, 'wrapper' => ['width' => '15']])
                         ->addWysiwyg('paneltitle', ['label' => 'Tytuł panelu', 'toolbar' => 'basic', 'media_upload' => 0, 'wrapper' => ['width' => '15']])
-                        ->addWysiwyg('panelauthor', ['label' => 'Autorzy', 'toolbar' => 'basic', 'media_upload' => 0, 'wrapper' => ['width' => '15']])
+                    /*     ->addWysiwyg('panelauthor', ['label' => 'Autorzy', 'toolbar' => 'basic', 'media_upload' => 0, 'wrapper' => ['width' => '15']]) */
                         ->addRepeater('extra_rows', [
                             'label' => 'Dodatkowe wiersze (np. przerwa kawowa)',
                             'button_label' => 'Dodaj wiersz',

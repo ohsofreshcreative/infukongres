@@ -57,9 +57,9 @@ if (!empty($background) && $background !== 'none') {
                                     <div class="agenda__elements__two pr-8">
                                         {!! $panel['paneltitle'] !!}
                                     </div>
-                                  <div class="agenda__elements__three">
+                               <!--    <div class="agenda__elements__three">
                                         {!! $panel['panelauthor'] !!}
-                                    </div>
+                                    </div> -->
                                 </div>
                             @endif
 
