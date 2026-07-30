@@ -54,12 +54,12 @@ if (!empty($background) && $background !== 'none') {
                                     <div class="agenda__elements__one">
                                         {!! $panel['paneltime'] !!}
                                     </div>
-                                    <div class="agenda__elements__two">
+                                    <div class="agenda__elements__two pr-8">
                                         {!! $panel['paneltitle'] !!}
                                     </div>
-                                    <div class="agenda__elements__three">
+                                   <!--  <div class="agenda__elements__three">
                                         {!! $panel['panelauthor'] !!}
-                                    </div>
+                                    </div> -->
                                 </div>
                             @endif
 
@@ -70,12 +70,12 @@ if (!empty($background) && $background !== 'none') {
                                         <div class="agenda__elements__one">
                                             {!! $extra['txt1'] !!}
                                         </div>
-                                        <div class="agenda__elements__two">
+                                        <div class="agenda__elements__two pr-8">
                                             {!! $extra['txt2'] !!}
                                         </div>
-                                        <div class="agenda__elements__three">
+                                      <!--   <div class="agenda__elements__three">
                                             {!! $extra['txt3'] !!}
-                                        </div>
+                                        </div> -->
                                     </div>
                                 @endforeach
                             @endif
