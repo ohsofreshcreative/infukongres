@@ -18,6 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	color: #fff;
 	max-width: 640px;
 	margin: 0 auto;
+	margin-top:40px;
 ">
 	<p style="margin: 0 0 1rem; font-weight: 600; font-size: 1.1rem;">Szanowni Państwo,</p>
 	<p style="margin: 0 0 1rem;">
