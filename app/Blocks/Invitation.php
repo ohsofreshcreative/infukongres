@@ -16,7 +16,7 @@ class Invitation extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 		'anchor' => true,
 		'customClassName' => true,
@@ -28,15 +28,6 @@ class Invitation extends Block
 
 		$invitation
 			->setLocation('block', '==', 'acf/invitation') // ważne!
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Zaproszenie',
-				'open' => false,
-				'multi_expand' => true,
-			])
 			/*--- GROUP ---*/
 			->addTab('Elementy', ['placement' => 'top'])
 			->addGroup('g_invitation', ['label' => ''])

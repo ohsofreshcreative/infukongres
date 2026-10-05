@@ -16,7 +16,7 @@ class Start extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 	];
 
@@ -26,15 +26,6 @@ class Start extends Block
 
 		$start
 			->setLocation('block', '==', 'acf/start') // ważne!
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Start',
-				'open' => false,
-				'multi_expand' => true,
-			])
 			->addTab('Treść', ['placement' => 'top'])
 			->addGroup('g_start', ['label' => 'start'])
 			->addTrueFalse('use_video', [

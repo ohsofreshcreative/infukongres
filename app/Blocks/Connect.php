@@ -16,7 +16,7 @@ class Connect extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 	];
 
@@ -26,15 +26,6 @@ class Connect extends Block
 
 		$connect
 			->setLocation('block', '==', 'acf/connect') // ważne!
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Dane kontaktowe',
-				'open' => false,
-				'multi_expand' => true,
-			])
 			/*--- FIELDS ---*/
 			->addTab('Treści', ['placement' => 'top'])
 			->addGroup('g_connect', ['label' => ''])

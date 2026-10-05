@@ -16,7 +16,7 @@ class OfferCardsBlock extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 		'multiple' => true,
 		'anchor' => true,
@@ -28,16 +28,6 @@ class OfferCardsBlock extends Block
 		$offerCardsBlock = new FieldsBuilder('offer-cards-block');
 
 		$offerCardsBlock
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Kafelki oferty',
-				'open' => false,
-				'multi_expand' => true,
-			])
-
 			->addTab('Treść', ['placement' => 'top'])
 			->addText('subtitle', ['label' => 'Śródtytuł'])
 			->addText('title', ['label' => 'Tytuł'])

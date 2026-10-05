@@ -16,7 +16,7 @@ class OfferCards extends Field
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 	];
 

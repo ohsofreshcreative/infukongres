@@ -16,7 +16,7 @@ class Speakers extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 	];
 
@@ -26,15 +26,6 @@ class Speakers extends Block
 
 		$speakers
 			->setLocation('block', '==', 'acf/speakers') // ważne!
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Członkowie',
-				'open' => false,
-				'multi_expand' => true,
-			])
 			/*--- FIELDS ---*/
 			->addTab('Treści', ['placement' => 'top'])
 			->addGroup('g_speakers', ['label' => ''])

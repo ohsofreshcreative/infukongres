@@ -16,7 +16,7 @@ class Offer extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 		'multiple' => true,
 		'anchor' => true,
@@ -28,11 +28,6 @@ class Offer extends Block
 		$offer = new FieldsBuilder('offer');
 
 		$offer
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-
 			->addAccordion('accordion', [
 				'label' => 'Oferta - Kafelki',
 				'open' => true,

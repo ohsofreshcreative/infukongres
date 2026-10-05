@@ -16,7 +16,7 @@ class Info extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 		'anchor' => true,
 		'customClassName' => true,
@@ -28,15 +28,6 @@ class Info extends Block
 
 		$info
 			->setLocation('block', '==', 'acf/info') // ważne!
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Informacje',
-				'open' => false,
-				'multi_expand' => true,
-			])
 			/*--- GROUP ---*/
 			->addTab('Elementy', ['placement' => 'top'])
 			->addGroup('g_info', ['label' => ''])

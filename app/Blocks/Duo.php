@@ -16,7 +16,7 @@ class Duo extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 		'anchor' => true,
 		'customClassName' => true,
@@ -28,15 +28,6 @@ class Duo extends Block
 
 		$text_image
 			->setLocation('block', '==', 'acf/duo') // ważne!
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Treść oraz dwa zdjęcia',
-				'open' => false,
-				'multi_expand' => true,
-			])
 			/*--- GROUP ---*/
 			->addTab('Elementy', ['placement' => 'top'])
 			->addGroup('g_duo', ['label' => ''])

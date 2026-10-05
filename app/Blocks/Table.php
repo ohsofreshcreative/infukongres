@@ -16,7 +16,7 @@ class Table extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 	];
 
@@ -26,15 +26,6 @@ class Table extends Block
 
 		$table
 			->setLocation('block', '==', 'acf/table') // ważne!
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Tabela',
-				'open' => false,
-				'multi_expand' => true,
-			])
 			/*--- FIELDS ---*/
 			->addTab('Treści', ['placement' => 'top'])
 			->addGroup('g_table', ['label' => ''])

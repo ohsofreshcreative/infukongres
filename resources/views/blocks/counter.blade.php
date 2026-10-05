@@ -10,7 +10,6 @@ $brandbg = get_field('brandbg');
 $section_id = get_field('section_id');
 $section_class = get_field('section_class');
 $g_counter = get_field('g_counter');
-$block_title = get_field('block-title');
 @endphp
 
 <!--- counter --->

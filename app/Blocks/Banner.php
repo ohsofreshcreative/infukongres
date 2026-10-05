@@ -16,7 +16,7 @@ class Banner extends Block
 	public $mode = 'edit';
 	public $supports = [
 		'align' => false,
-		'mode' => false,
+		'mode' => true,
 		'jsx' => true,
 		'anchor' => true,
 		'customClassName' => true,
@@ -28,15 +28,6 @@ class Banner extends Block
 
 		$banner
 			->setLocation('block', '==', 'acf/banner') // ważne!
-			->addText('block-title', [
-				'label' => 'Tytuł',
-				'required' => 0,
-			])
-			->addAccordion('accordion1', [
-				'label' => 'Banner',
-				'open' => false,
-				'multi_expand' => true,
-			])
 			/*--- GROUP ---*/
 			->addTab('Elementy', ['placement' => 'top'])
 			->addGroup('g_banner', ['label' => ''])
